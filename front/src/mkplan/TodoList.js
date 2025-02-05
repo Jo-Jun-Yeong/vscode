@@ -4,20 +4,18 @@ import TodoListItem from './TodoListItem'
 export default function TodoList({inputList}) {
   return (
     <div>
-      <div>계획 리스트</div>
-      <div>
-        
+      {inputList.length ===0 ? (
+        <p>일정이 비어있습니다.</p>
+      ) : (
         <ul>
-          {
-            inputList.map((item, index)=> (
-              <TodoListItem key={index} text={item}/>
-            ))
-          }
-
-        </ul>
-        
-      
-      </div>
+        {
+          
+          inputList.map((item, index)=> (
+            <TodoListItem key={index} text={item}/>
+          ))
+        }
+      </ul>
+      )}
     </div>
   )
 }

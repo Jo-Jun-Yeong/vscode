@@ -15,7 +15,6 @@ export default function TodoInsert({inputList, setInputList, inputValue, setInpu
 
   return (
     <div>
-      <div>TodoInsert</div>
 
       <div>
         <input
